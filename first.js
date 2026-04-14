@@ -28,6 +28,9 @@ function type() {
 
   setTimeout(type, isDeleting ? 50 : 100); // typing speed
 }
+const typingElement = document.getElementById("typing");
 
-// Start animation
-type();
+if (typingElement) {
+  type();
+}
+
